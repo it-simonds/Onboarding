@@ -24,7 +24,7 @@ echo. >NUL 2>&1
 echo Performing onboarding operations >NUL 2>&1
 echo. >NUL 2>&1
 
-echo Script ran successfully > C:\Windows\Temp\onboarding_success.txt
+echo Script ran successfully > C:\Windows\Temp\onboarding_success1.txt
 
 IF [%PROCESSOR_ARCHITEW6432%] EQU [] (
   set powershellPath=%windir%\System32\WindowsPowerShell\v1.0\powershell.exe

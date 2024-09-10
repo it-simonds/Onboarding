@@ -18,8 +18,10 @@ $itunesApp1 = Get-AppxPackage -Name "*AppleInc.iTunes*"
 # Check if the iTunes Microsoft Store app is installed
 if ($itunesApp1) {
     # Uninstall iTunes
-    Remove-AppxPackage -Package $itunesApp.PackageFullName
+    Remove-AppxPackage -Package $itunesApp1.PackageFullName
+    Write-Host "iTunes Microsoft Store app has been uninstalled successfully."
 } else {
+    Write-Host "iTunes Microsoft Store app is not installed on this machine."
 }
 
 
